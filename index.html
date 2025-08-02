@@ -118,14 +118,25 @@
 						<p>Bronsonlow@icloud.com<br>(435) 557-1225</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form action="https://formsubmit.co/bronsonlow@icloud.com" method="POST">
 							<div class="fields">
-								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-								<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-							</div>
-							<ul class="actions special">
-								<li><input type="submit" value="Send Message" /></li>
+								<div class="field half">
+									<input type="text" name="name" placeholder="Your Name" required>
+									</div>
+									<div class="field half">
+										<input type="email" name="email" placeholder="Your Email" required>
+										</div>
+										<div class="field">
+										<textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+										</div>
+										</div>
+
+										<!-- Optional anti-spam & redirect -->
+										<input type="hidden" name="_captcha" value="false">
+										<input type="hidden" name="_next" value="https://bopielow.github.io/bopielow2.github.io/#contact">
+
+									<ul class="actions special">
+								<li><button type="submit">Send Message</button></li>
 							</ul>
 						</form>
 					</div>
@@ -158,19 +169,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<form action="https://formsubmit.co/bronsonlow@icloud.com" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Your Message" required></textarea>
-
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://bopielow.github.io/bopielow2.github.io/#">
-
-<button type="submit">Send Message</button>
-</form>
 	</body>
 
 </html>
+
 
 
 
