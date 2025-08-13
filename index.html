@@ -168,11 +168,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+			function setVhProperty() {
+			document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+			}
+			setVhProperty();
+			window.addEventListener('resize', setVhProperty);
+			window.addEventListener('orientationchange', setVhProperty);
+			</script>
 
 	</body>
 
 </html>
+
 
 
 
