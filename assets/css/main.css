@@ -1939,8 +1939,8 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
-		.main.fullscreen {
-			min-height: 100%;
+		section.main.fullscreen {
+			min-height: calc(var(--vh, 1vh)*100);
 		}
 
 		.main.style1 {
