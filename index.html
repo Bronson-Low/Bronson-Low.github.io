@@ -74,7 +74,7 @@
 					<header>
 						<h2>My Work</h2>
 						<p>This is a look at the kind of portraits I love taking. Natural, honest, and easygoing.</p>
-						<p>Click or tap on any photo to see it larger2</p>
+						<p>Click or tap on any photo to see it larger</p>
 					</header>
 
 					<!-- Gallery  -->
@@ -168,10 +168,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			function setVhProperty() {
+			document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+			}
+			setVhProperty();
+			window.addEventListener('resize', setVhProperty);
+			window.addEventListener('orientationchange', setVhProperty);
+			</script>
 
 	</body>
 
 </html>
+
 
 
 
